@@ -1,0 +1,41 @@
+{
+  "name": "graphic-walker-home",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/github/license/kanaries/graphic-walker) ![](https://img.shields.io/npm/v/@kanaries/graphic-walker) ![](https://img.shields.io/github/workflow/status/kanaries/graphic-walker/auto-build.yml)",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build": "yarn workspace @kanaries/graphic-walker build",
+    "test:consumer": "node scripts/consumer-smoke-test.mjs",
+    "deploy": "yarn workspace playground deploy",
+    "sync:datasets": "node scripts/demo-datasets.mjs"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanaries/graphic-walker.git"
+  },
+  "keywords": [
+    "visualization",
+    "EDA",
+    "data-analysis"
+  ],
+  "author": "Kanaries Data Inc.",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Kanaries/graphic-walker/issues"
+  },
+  "resolutions": {
+    "@types/react": "^19.x",
+    "@types/react-dom": "^19.x"
+  },
+  "homepage": "https://github.com/Kanaries/graphic-walker#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

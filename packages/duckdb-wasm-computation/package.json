@@ -1,0 +1,25 @@
+{
+    "name": "@kanaries/duckdb-computation",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "dist/duckdb-computation.js",
+    "types": "dist/index.d.ts",
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "yarn typecheck && vite build",
+        "typecheck": "tsc --noEmit"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 160,
+        "singleQuote": true
+    },
+    "devDependencies": {
+        "@duckdb/duckdb-wasm": "^1.28.0",
+        "@kanaries/graphic-walker": "0.5.3",
+        "@kanaries/gw-dsl-parser": "^0.1.48-rc3",
+        "apache-arrow": "^17.0.0",
+        "nanoid": "^5.0.1",
+        "typescript": "^5.2.2"
+    }
+}

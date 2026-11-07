@@ -1,0 +1,517 @@
+{
+    "config": {
+        "scheme": "スキーム",
+        "primary_color": "プライマリカラー",
+        "color_palette": "カラーパレット",
+        "theme": "テーマ",
+        "opacity": "不透明度",
+        "default_color_palette": "デフォルト",
+        "size": "サイズ",
+        "min_domain": "最小ドメイン",
+        "max_domain": "最大ドメイン",
+        "range": "範囲",
+        "format": "フォーマット",
+        "numberFormat": "数字",
+        "timeFormat": "日付",
+        "normalizedNumberFormat": "正規化された数字",
+        "background": "背景",
+        "color": "色",
+        "independence": "独立したスケーリング",
+        "x": "x軸",
+        "y": "y軸",
+        "zeroScale": "０を含む",
+        "misc": "その他",
+        "formatGuidesDocs": "フォーマットガイド",
+        "readHere": "ここを読む",
+        "svg": "SVGを使う",
+        "customTile": "地図タイルをカスタマイズ",
+        "customOffset": "タイムゾーンをカスタマイズ",
+        "map_settings": "地図設定",
+        "map_settings_desc": "地図の可視化の表示方法とカスタム地図タイルサービスの使用方法を設定します。",
+        "customTile_desc": "地理的可視化のためのカスタム地図タイルURLを指定します。",
+        "choropleth_settings": "コロプレス設定",
+        "choropleth_settings_desc": "コロプレス地図での地理的形状とデータの表示方法を制御します。",
+        "include_unmatched": "マッチしないコロプレスをスケールに含める",
+        "include_unmatched_desc": "カラースケールを計算する際にデータの一致がない地域を含めます。",
+        "include_shapes": "データのない形状を含める",
+        "include_shapes_desc": "関連するデータ値がなくても、すべての地理的形状を表示します。",
+        "visualization_settings": "可視化設定",
+        "visualization_settings_desc": "すべての可視化に対する一般的な設定を構成します。",
+        "zeroScale_desc": "データ範囲に合わせて自動スケーリングする代わりに、数値軸をゼロから始めるように強制します。",
+        "svg_desc": "高品質だがパフォーマンスが低下する可能性のあるSVGレンダラーを使用します。",
+        "timezone_settings": "タイムゾーン設定",
+        "timezone_settings_desc": "異なるタイムゾーン間での時間ベースのデータの表示方法を設定します。",
+        "customOffset_desc": "時間ベースのデータを表示するためのカスタムタイムゾーンを指定します。",
+        "row": "行",
+        "column": "列",
+        "theta": "角度",
+        "radius": "半径",
+        "colors": "色",
+        "colors_desc": "チャートで使用する色、テーマ、パレットをカスタマイズします。",
+        "primary_color_desc": "色チャネルにフィールドが割り当てられていないときに使われるデフォルトの色。",
+        "background_desc": "チャートキャンバスの背景色。デフォルトは透明です。",
+        "theme_desc": "軸、グリッド線、デフォルトカラーを制御するチャート全体のスタイルプリセット。",
+        "color_palette_desc": "色チャネルにフィールドを割り当てたときに使われる配色。",
+        "scale": "スケール",
+        "scale_desc": "スケールはデータ値を位置・サイズ・不透明度などの視覚属性へ変換する方法を決めます。通常はデータから自動計算されます。手動で制御したい場合のみ、下のオーバーライドを有効にしてください。",
+        "customize_scales": "チャネルを選択",
+        "scale_empty": "チャネルが選択されていません。「チャネルを選択」からスケールを調整するチャネルを選んでください。",
+        "scale_column_desc": "水平位置のスケール（列 / x軸）。",
+        "scale_row_desc": "垂直位置のスケール（行 / y軸）。",
+        "scale_color_desc": "データ値を色のグラデーションに対応付けるスケール。",
+        "scale_theta_desc": "円弧・円グラフで使われる角度スケール。",
+        "scale_radius_desc": "円弧・円グラフで使われる半径スケール。",
+        "scale_opacity_desc": "データ値を図形の不透明度に対応付けるスケール。",
+        "scale_size_desc": "データ値を図形のサイズに対応付けるスケール。",
+        "scale_type_desc": "データ値の変換方法（log、sqrt など）を指定します。偏った分布のデータに便利です。",
+        "min_domain_desc": "スケールの下限に対応するデータ値を手動で設定します。",
+        "max_domain_desc": "スケールの上限に対応するデータ値を手動で設定します。",
+        "range_desc": "視覚的な出力の最小値と最大値を制限します（例：図形サイズの最小・最大）。",
+        "format_desc": "d3-format のパターンを使って、軸・凡例・ツールチップでの数値や日付の表示方法を制御します。空欄の場合はデフォルトの書式が使われます。",
+        "numberFormat_desc": "メジャー値に適用されます。例：',.2f' は 1234.5 を 1,234.50 と表示します。",
+        "timeFormat_desc": "日付・時刻の値に適用されます。例：'%Y-%m-%d' は日付を 2024-01-30 と表示します。",
+        "normalizedNumberFormat_desc": "スタックモードが「正規化」のとき、割合に適用されます。例：'.0%' は 0.25 を 25% と表示します。",
+        "independence_desc": "チャートが複数のサブビュー（ファセット）に分割されている場合、比較しやすいようにデフォルトではすべてのサブビューが同じスケールを共有します。チャネルを有効にすると、各サブビューが独自のスケールを計算します。",
+        "independent_channel_desc": "各サブビューが独自の{{channel}}スケールを使用します。"
+    },
+    "explain": {
+        "title": "データの説明",
+        "loading": "分析中...",
+        "empty": "顕著なパターンは見つかりませんでした",
+        "detail": {
+            "empty": "左側でインサイトを選択してください"
+        },
+        "overview": {
+            "all": "すべて",
+            "skippedNote": "{{count}} 件の分析をスキップしました"
+        },
+        "type": {
+            "extremeValue": "極端な値",
+            "contributingDimension": "寄与するディメンション",
+            "contributingMeasure": "寄与するメジャー",
+            "uniqueMark": "このマークの特徴"
+        },
+        "strength": {
+            "strong": "強",
+            "moderate": "中",
+            "weak": "弱"
+        },
+        "skip": {
+            "noMark": "データの説明を実行する前にマークを選択してください。",
+            "temporalMark": "時間マークの極端な値はまだ分析していません。",
+            "noSensitiveAgg": "選択されたメジャー集計は極端な値に反応しにくい形式です。",
+            "noCandidates": "比較に使える候補フィールドがありません。",
+            "noDerivableTarget": "ビューのメジャー集計はモデル化できません。sum、mean、count のみ対応しています。"
+        },
+        "extremeValue": {
+            "desc": "{{rowCount}} 件のうち {{outlierCount}} 件が極端な値です。これらを除くと、{{measure}} の {{agg}} は {{before}} から {{after}} に変わります（{{changePercent}}%）。",
+            "truncated": "{{measure}} のマークは {{rowCount}} 行を含み、平均と中央値に差があります。集計値を解釈する前に行の内容を確認してください。"
+        },
+        "uniqueMark": {
+            "countDesc": "このマークの {{dimension}} における構成は他のマークと異なります。{{markShare}}% が「{{topCategory}}」に入り、他のマークでは {{siblingShare}}% です。",
+            "measureDesc": "このマークの {{measure}} は、{{dimension}} 上で他のマークと異なる分布を示します（ヒューリスティック）。"
+        },
+        "contributingDimension": {
+            "desc": "{{dimension}} の構成は、マーク全体で {{target}} を予測する助けになります（交差検証の適合度 +{{cvGainPercent}}%）。「{{topCategory}}」の割合が最も強く関連しています。"
+        },
+        "contributingMeasure": {
+            "desc": "{{candidate}}（マークごとに集計）は {{target}} の予測に役立ちます（交差検証の適合度 +{{cvGainPercent}}%）。関連を示すもので、因果ではありません。"
+        },
+        "truncation": {
+            "notice": "{{total}} 件の候補フィールドのうち {{scanned}} 件をスキャンしました。",
+            "more": "さらにフィールドを分析"
+        }
+    },
+    "constant": {
+        "row_count": "行数",
+        "mea_key": "名",
+        "mea_val": "値",
+        "paint_key": "キャンバスでのフィールド",
+        "analytic_type": {
+            "dimension": "ディメンション",
+            "measure": "メジャー"
+        },
+        "semantic_type": {
+            "nominal": "名義尺度",
+            "ordinal": "順序尺度",
+            "temporal": "時間尺度",
+            "quantitative": "数量尺度"
+        },
+        "mark_type": {
+            "__enum__": "マークタイプ",
+            "auto": "自動",
+            "bar": "バー",
+            "line": "ライン",
+            "area": "エリア",
+            "trail": "トレイル",
+            "point": "散布図",
+            "circle": "円",
+            "tick": "棒線図",
+            "rect": "長方形",
+            "arc": "アーク",
+            "boxplot": "ボックスプロット",
+            "table": "テーブル",
+            "text": "文字",
+            "poi": "POI",
+            "choropleth": "コロプレス"
+        },
+        "stack_mode": {
+            "__enum__": "スタックモード",
+            "none": "なし",
+            "stack": "スタック",
+            "normalize": "正規化",
+            "center": "中央"
+        },
+        "layout_type": {
+            "__enum__": "レイアウトタイプ",
+            "auto": "自動",
+            "fixed": "固定",
+            "full": "コンテナー"
+        },
+        "exploration_mode": {
+            "__enum__": "探索モード",
+            "none": "オフ",
+            "brush": "ブラシ",
+            "point": "ポイント"
+        },
+        "brush_mode": {
+            "__enum__": "ブラシの方向",
+            "default": "両方",
+            "x": "X軸のみ",
+            "y": "Y軸のみ"
+        },
+        "draggable_key": {
+            "fields": "フィールド",
+            "columns": "X軸",
+            "rows": "Y軸",
+            "color": "色",
+            "opacity": "不透明度",
+            "size": "大きさ",
+            "shape": "形状",
+            "theta": "角度",
+            "radius": "半径",
+            "filters": "フィルター",
+            "text": "テキスト",
+            "longitude": "経度",
+            "latitude": "緯度",
+            "geoId": "地理ID"
+        },
+        "aggregator": {
+            "sum": "合計",
+            "mean": "平均",
+            "count": "件数",
+            "median": "中央値",
+            "min": "最小値",
+            "max": "最大値",
+            "q1": "第一四分位数",
+            "q3": "第三四分位数",
+            "stdev": "標準偏差",
+            "variance": "分散"
+        },
+        "filter_type": {
+            "one_of": "値のセット",
+            "one_of_desc": "指定された値を選択します",
+            "range": "範囲",
+            "range_desc": "範囲 [開始, 終了] 内の値を選択します",
+            "temporal_range": "日付範囲",
+            "temporal_range_desc": "日付範囲 [開始, 終了] 内の値を選択します"
+        }
+    },
+    "App": {
+        "labels": {
+            "data_interpretation": "データ解釈",
+            "data_view": "データ一覧"
+        },
+        "segments": {
+            "vis": "可視化",
+            "data": "データ",
+            "chat": "会話"
+        },
+        "feedback": {
+            "vote": "Askvizの結果はどうですか？",
+            "voteup": "いいね",
+            "votedown": "ダメかも",
+            "report": "Askvizを改善することに手伝って、正しいチャットを教えてもよろしいですか？",
+            "report_button": "フィードバック"
+        }
+    },
+    "DataSource": {
+        "labels": {
+            "cur_dataset": "現在のデータセット"
+        },
+        "buttons": {
+            "create_dataset": "データセットを作成",
+            "export_as_file": "ファイルとして保存",
+            "import_file": "Graphic Walkerファイルをインポート"
+        },
+        "dialog": {
+            "create_data_source": "新しいデータソース",
+            "or_demo": "またはサンプルデータセットを試す",
+            "file": {
+                "drop_title": "CSV / JSON ファイルをここにドロップ",
+                "drop_desc": "またはクリックしてファイルを選択",
+                "charset": "文字コード",
+                "parsing": "{{file}} を読み込み中…",
+                "unsupported": "「{{file}}」は対応していない形式です。.csv または .json を選択してください。",
+                "read_error": "「{{file}}」を読み込めませんでした。有効な CSV / JSON ファイルか確認してください。"
+            },
+            "public": {
+                "loading": "読み込み中…",
+                "meta": "{{rows}} 行 · {{cols}} フィールド",
+                "fetch_error": "「{{name}}」の読み込みに失敗しました。接続を確認して、もう一度クリックしてください。",
+                "datasets": {
+                    "CARS": "400 以上の車種の燃費・馬力・重量・生産国データ。",
+                    "STUDENTS": "学生 1,000 人の試験成績と属性（性別・保護者の学歴など）。",
+                    "BIKE_SHARING": "自転車シェアの時間別利用数と天候・季節データ。",
+                    "EARTHQUAKE": "世界の地震 23,000 件超の位置とマグニチュード。",
+                    "CAR_SALES": "157 車種の販売台数・価格・エンジン仕様。",
+                    "COLLAGE": "米国大学の合格率・SAT スコア・学費データ。",
+                    "KELPER": "NASA ケプラー計画の系外惑星候補と軌道データ。",
+                    "BTC_GOLD": "ビットコインと金の日次価格。取引戦略の比較に。",
+                    "TITANIC": "タイタニック号乗客の生存・等級・年齢・運賃。"
+                }
+            },
+            "preview": {
+                "back": "戻る",
+                "dataset_name": "データセット名",
+                "meta": "{{rows}} 行 · {{cols}} フィールド",
+                "use_data": "このデータセットを使う",
+                "tip": "ヒント：インポート前に表ヘッダーの型アイコンをクリックして調整できます。"
+            }
+        }
+    },
+    "main": {
+        "tablist": {
+            "new": "+ 新規作成",
+            "auto_title": "グラフ {{idx}}",
+            "chart_name": "グラフ名",
+            "remove_confirm": "このグラフを削除してもよろしいですか？"
+        },
+        "askviz": {
+            "placeholder": "データセットから描画したい視覚化は何ですか？"
+        },
+        "tabpanel": {
+            "menubar": {
+                "undo": "元に戻す",
+                "redo": "やり直し"
+            },
+            "settings": {
+                "toggle": {
+                    "aggregation": "集計",
+                    "stack": "スタック",
+                    "axes_resize": "軸のサイズ変更",
+                    "debug": "デバッグ"
+                },
+                "sort": "並べ替えの順序",
+                "autoviz": "Auto Viz",
+                "button": {
+                    "ascending": "昇順に並べ替える",
+                    "descending": "降順に並べ替える",
+                    "transpose": "転置",
+                    "config": "設定",
+                    "export_chart": "エクスポート",
+                    "export_chart_as": "{{type}}としてエクスポート",
+                    "export_code": "コードをエクスポート",
+                    "geojson": "地理情報設定",
+                    "painter": "データキャンバスを開く",
+                    "disabled_painter": {
+                        "aggergation": "データキャンバスを作るには集計をオフにするが必要",
+                        "temporal": "時間的フィールドはまたデータキャンバスで使うことができない",
+                        "count": "データキャンバスを作るにはフィールドをXY軸に設置してください"
+                    }
+                },
+                "paint": {
+                    "palette": "パレット",
+                    "eraser": "消しゴム",
+                    "color": "色",
+                    "label": "ラベル",
+                    "brush_size": "ブラシサイズ",
+                    "save_paint": "キャンバスを保存",
+                    "reset_paint": "キャンバスをリセット",
+                    "cancel": "キャンセル",
+                    "delete_paint": "キャンバスを削除"
+                },
+                "limit": "クエリ制限 (行数) を有効にする",
+                "size": "サイズ変更",
+                "size_setting": {
+                    "width": "幅",
+                    "height": "高さ"
+                },
+                "table": {
+                    "summary": "サマリを表示"
+                },
+                "geography": "地理情報設定",
+                "geography_settings": {
+                    "geoKey": "フィーチャーID",
+                    "format": "データ形式",
+                    "geojson": "GeoJSON",
+                    "topojson": "TopoJSON",
+                    "objectKey": "Feature のキー",
+                    "jsonInputPlaceholder": "{{format}}ファイルをここに",
+                    "href": "{{format}} URL",
+                    "hrefPlaceholder": "{{format}} URLを入力",
+                    "load": "ロード",
+                    "loading": "地理データを読み込んでいます..."
+                }
+            },
+            "DatasetFields": {
+                "field_list": "フィールド一覧"
+            }
+        }
+    },
+    "filters": {
+        "to_edit": "このルールを編集",
+        "empty_rule": "! (未設定)",
+        "editing": "フィルターの設定",
+        "form": {
+            "name": "フィールド",
+            "aggregation": "集計",
+            "rule": "ルール"
+        },
+        "header": {
+            "visibility": "表示",
+            "value": "ラベル",
+            "count": "件数"
+        },
+        "selected_keys": "{{ count }}件が選択されました",
+        "btn": {
+            "select_all": "すべて選択",
+            "unselect_all": "すべての選択を解除",
+            "reverse": "選択を反転する",
+            "confirm": "確認",
+            "cancel": "キャンセル"
+        },
+        "range": {
+            "start_value": "最小",
+            "end_value": "最大"
+        }
+    },
+    "actions": {
+        "prev": "前へ",
+        "next": "次へ",
+        "drop_field": "ここにフィールドをドロップ",
+        "confirm": "確認",
+        "cancel": "キャンセル"
+    },
+    "field_menu": {
+        "to_dim": "ディメンションに変更",
+        "to_mea": "メジャーに変更",
+        "new_calc": "計算フィールドを作成",
+        "bin": "ビン",
+        "binCount": "ビンカウント",
+        "log": "対数({{ base }})",
+        "binCustom": "ビン（カスタム）",
+        "logCustom": "対数（カスタム）",
+        "semantic_type": {
+            "name": "セマンティックタイプの変更",
+            "types": {
+                "nominal": "名義",
+                "ordinal": "序数",
+                "quantitative": "量的",
+                "temporal": "時間的"
+            }
+        },
+        "drill": {
+            "name": "時間単位",
+            "feature_name": "時間特性",
+            "levels": {
+                "year": "年",
+                "quarter": "四半期",
+                "month": "月",
+                "week": "週",
+                "weekday": "曜日",
+                "day": "日",
+                "hour": "時",
+                "minute": "分",
+                "second": "秒",
+                "iso_year": "ISO年",
+                "iso_week": "ISO週",
+                "iso_weekday": "ISO曜日"
+            }
+        }
+    },
+    "calc": {
+        "bin_panel_title": "ビン",
+        "bin_panel_desc": "フィールドのビン構成を設定する",
+        "bin_panel_option_widths": "等しい幅のビン",
+        "bin_panel_option_counts": "等しい数のビン",
+        "bin_panel_number": "ビンの数",
+        "log_panel_title": "対数変換",
+        "log_panel_desc": "フィールドの対数設定を設定する",
+        "log_panel_number": "対数の底"
+    },
+    "autoviz": {
+        "title": "Auto Viz",
+        "description": "関心のあるフィールドを選ぶと、作成可能なチャートがハイライトされ、最適なものに印が付きます。",
+        "recommended": "おすすめ",
+        "apply_best": "おすすめを適用",
+        "hint": "{{count}} 種類のチャートが利用可能です",
+        "empty": "またはチャートをクリックして開始",
+        "based_on_view": "現在のチャートのフィールドに基づく · {{count}} 種類が利用可能",
+        "selected_count": "フィールドリストで {{count}} 個選択中",
+        "clear": "クリア",
+        "uses": "使用フィールド：{{fields}}",
+        "select_hint": "左のフィールドをクリックで選択 · <k></k>+クリックで複数選択",
+        "refine_hint": "フィールドをクリック / <k></k>+クリックで絞り込み",
+        "collapse": "パネルを折りたたむ",
+        "expand": "Auto Viz を表示",
+        "charts": {
+            "table": "テキストテーブル",
+            "highlight_table": "ハイライトテーブル",
+            "heatmap": "ヒートマップ",
+            "bar": "棒グラフ",
+            "stacked_bar": "積み上げ棒グラフ",
+            "grouped_bar": "グループ棒グラフ",
+            "line": "折れ線グラフ",
+            "area": "面グラフ",
+            "histogram": "ヒストグラム",
+            "scatter": "散布図",
+            "circle_view": "サークルビュー",
+            "pie": "円グラフ",
+            "boxplot": "箱ひげ図",
+            "poi_map": "シンボルマップ",
+            "choropleth_map": "塗り分けマップ"
+        },
+        "reason": {
+            "need_fields": "フィールドを1つ以上選択してください",
+            "need_dimension": "ディメンションが1つ以上必要です",
+            "need_two_dimensions": "ディメンションが2つ以上必要です",
+            "too_many_dimensions": "ディメンションが多すぎます",
+            "need_measure": "メジャーが1つ以上必要です",
+            "need_two_measures": "メジャーが2つ以上必要です",
+            "need_single_measure": "メジャーは1つだけ選択できます",
+            "too_many_measures": "メジャーが多すぎます",
+            "need_temporal": "日付/時間ディメンションが必要です",
+            "need_temporal_or_ordinal": "日付/時間または順序ディメンションが必要です",
+            "need_raw_measure": "行数ではなく生のメジャーが必要です",
+            "need_lon_lat": "経度・緯度フィールドが必要です",
+            "need_geo_feature": "GeoJSON 境界の設定が必要です"
+        }
+    },
+    "data_table": {
+        "rows_other": "<b>{{value}}</b> 行",
+        "rows_filtered": "<b>{{value}}</b> / {{total}} 行",
+        "columns_other": "<b>{{value}}</b> 列",
+        "range": "<b>{{from}}–{{to}}</b> 行目 / 全 {{total}} 行",
+        "clear": "クリア",
+        "clear_filters": "フィルターをクリア",
+        "no_rows": "データがありません",
+        "no_matching_rows": "現在のフィルターに一致する行はありません",
+        "remove_filter": "{{name}} のフィルターを削除",
+        "n_values_other": "{{count}} 個の値",
+        "semantic_type": "セマンティックタイプ",
+        "column_options": "{{name}} 列のオプション",
+        "sort_asc": "昇順に並べ替える",
+        "sort_desc": "降順に並べ替える",
+        "clear_sort": "並べ替えを解除",
+        "filter": "フィルター…",
+        "clear_filter": "フィルターを解除",
+        "empty_value": "(空)",
+        "unique_count": "ユニーク値 {{value}}",
+        "unique_values": "ユニーク値",
+        "distinct_ratio": "{{percent}}% がユニーク",
+        "other": "その他 ({{count}})",
+        "avg": "平均 {{value}}",
+        "row_count_other": "{{value}} 行"
+    }
+}
